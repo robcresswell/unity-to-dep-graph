@@ -1,0 +1,39 @@
+{
+  "name": "unity-to-dep-graph",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "license": "MIT",
+  "author": "Rob Cresswell <robcresswell@pm.me>",
+  "homepage": "https://github.com/robcresswell/unity-to-dep-graph",
+  "repository": "github:robcresswell/unity-to-dep-graph",
+  "bugs": {
+    "url": "https://github.com/robcresswell/unity-to-dep-graph/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "./test/main.test.ts",
+    "lint": "eslint 'src/**/*.ts' && prettier --check 'src/**/*.ts'",
+    "lint:fix": "eslint --fix 'src/**/*.ts' && prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@snyk/dep-graph": "^1.30.0",
+    "event-loop-spinner": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.21",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
